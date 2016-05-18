@@ -2,6 +2,7 @@ function initMap() {
   var munich = new google.maps.LatLng(48.150618, 11.581317);
   var berlin = new google.maps.LatLng(52.512601, 13.321778);
   var teamarray = [];
+  window.infowindow = new google.maps.InfoWindow();
 
 
   var mapOptions = {
@@ -18,6 +19,7 @@ function initMap() {
   var teams = getDataJson();
   drawRoute(teams);
 
+//Startmarker
   // var marker = new google.maps.Marker({
   //   position: munich,
   //   map: map,
@@ -57,32 +59,36 @@ var drawRoute = function (teams){
         route.push(new google.maps.LatLng(team.locations[i].latitude, team.locations[i].longitude));
       }
 
-      marker(team.locations, team, map);
-
       var flightPath = new google.maps.Polyline({
         path:route,
         strokeColor: getColor(team),
         strokeOpacity: 1.0,
         strokeWeight: 3
-      });  
+      });
+
+      marker(team.locations, team, map, flightPath);
+
       flightPath.setMap(map); 
-    });
+  });
 };
 
 
 //Marker on last position
-function marker(coords, team, map) {
+function marker(coords, team, map, flightPath) {
   var marker;
   marker = new google.maps.Marker({
     position: new google.maps.LatLng(coords[coords.length-1].latitude, coords[coords.length-1].longitude),
     map: map
   });
 
-  var infowindow = new google.maps.InfoWindow({
-      content: makeContent(team)
-  });
+      
   google.maps.event.addListener(marker, 'click', function() {
-    infowindow.open(map,marker);
+    infowindow.setContent(makeContent(team));
+    infowindow.open(map, marker);
+  });
+  google.maps.event.addListener(flightPath, 'click', function() {
+    infowindow.setContent(makeContent(team));
+    infowindow.open(map, marker);
   });
 };
 
