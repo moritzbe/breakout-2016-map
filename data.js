@@ -111,4 +111,115 @@ var data = [{
       {latitude: 55.018009, longitude: 24.835509}
     ],
     invoiceId: 2
+  }, {
+    id: 4,
+    name: 'Viertes Team',
+    event: {
+      id: 4,
+      title: 'Breakout Berlin 2016',
+      date: 1464912000,
+      city: 'Berlin',
+      startingLocation: {latitude: 52.512601, longitude: 13.321778},
+      duration: 36
+    },
+    description: 'Gesichtsgulasch',
+    members: [
+      {
+        firstname: 'Roberto',
+        lastname: 'D',
+        id: 3,
+        participant: [Object],
+        profilePic: [Object],
+        roles: [Object],
+        blocked: true
+      },
+      {
+        firstname: 'Julia',
+        lastname: 'S',
+        id: 3,
+        participant: [Object],
+        profilePic: [Object],
+        roles: [Object],
+        blocked: true
+      }],
+    profilePic: {id: 21, type: 'IMAGE', uploadToken: null, sizes: []},
+    locations: [
+      {latitude: 50.255022, longitude: 5.485900},
+      {latitude: 52.018009, longitude: 0.0}
+    ],
+    invoiceId: 2
+  }, {
+    id: 5,
+    name: 'Fünftes Team',
+    event: {
+      id: 5,
+      title: 'Breakout München 2016',
+      date: 1464912000,
+      city: 'München',
+      startingLocation: {latitude: 48.13743, longitude: 11.57549},
+      duration: 36
+    },
+    description: 'Gesichtsgulasch',
+    members: [
+      {
+        firstname: 'Roberto',
+        lastname: 'D',
+        id: 3,
+        participant: [Object],
+        profilePic: [Object],
+        roles: [Object],
+        blocked: true
+      },
+      {
+        firstname: 'Julia',
+        lastname: 'S',
+        id: 3,
+        participant: [Object],
+        profilePic: [Object],
+        roles: [Object],
+        blocked: true
+      }],
+    profilePic: {id: 21, type: 'IMAGE', uploadToken: null, sizes: []},
+    locations: [
+      {latitude: 58.255022, longitude: 13.485900},
+      {latitude: 65.018009, longitude: 17.835509}
+    ],
+    invoiceId: 2
+  }, {
+    id: 6,
+    name: 'Sechstes Team',
+    event: {
+      id: 6,
+      title: 'Breakout Berlin 2016',
+      date: 1464912000,
+      city: 'Berlin',
+      startingLocation: {latitude: 52.512601, longitude: 13.321778},
+      duration: 36
+    },
+    description: 'Gesichtsgulasch',
+    members: [
+      {
+        firstname: 'Roberto',
+        lastname: 'D',
+        id: 3,
+        participant: [Object],
+        profilePic: [Object],
+        roles: [Object],
+        blocked: true
+      },
+      {
+        firstname: 'Julia',
+        lastname: 'S',
+        id: 3,
+        participant: [Object],
+        profilePic: [Object],
+        roles: [Object],
+        blocked: true
+      }],
+    profilePic: {id: 21, type: 'IMAGE', uploadToken: null, sizes: []},
+    locations: [
+      {latitude: 51.255022, longitude: 16.485900},
+      {latitude: 42.018009, longitude: 24.0}
+    ],
+    invoiceId: 2
   }];
