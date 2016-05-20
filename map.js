@@ -103,6 +103,7 @@ function marker(route, team, map, flightPath) {
 
 
 //Window that shows on a marker
+// Hier kannst du das Html ändern. Ansonsten natürlich auch über map.css
 function makeContent(team) {
   var contentstring = '<div id="content">'+
     '<div id="siteNotice">'+
