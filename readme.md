@@ -5,8 +5,10 @@ Map für Breakout, Teams aus Berlin und München. Datenformat siehe data.js
 
 ## ToDos
 
-- Set Startmarker
-- Start Korrekt setzen
+- Set Startmarker für Muc und Berlin
+- Testen
+- Validieren
+- geilere Views wären cool
 
 
 
@@ -16,5 +18,5 @@ Map für Breakout, Teams aus Berlin und München. Datenformat siehe data.js
 - Keine Tests
 - Keine Validierungen
 - Keine Errorhandlers 
-- Crasht bei falschen Lat/Lng´s
+- Crasht evtl. bei falschen Lat/Lng´s
 
