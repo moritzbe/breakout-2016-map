@@ -7,3 +7,11 @@ html, body {
 #map {
   height: 100%;
 }
+
+#content {
+  margin: 4px;
+}
+
+h4, p {
+  margin: 4px 0;
+}
